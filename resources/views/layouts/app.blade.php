@@ -22,7 +22,7 @@
 
     <body class="antialiased font-sans relative bg-gray-100 dark:bg-neutral-900">
     <div class="min-h-screen flex flex-col">
-        <x-banner />
+        <x-popups.banner />
 
         <div class="w-screen mx-auto flex justify-center">
             <nav id="navbar" class="sticky top-0 z-40 w-full bg-white dark:bg-gray-800">
@@ -39,7 +39,7 @@
             </div>
 
             <!-- Sidebar start-->
-{{--            <x-main.mobilemenu />--}}
+            <x-main.mobilemenu />
         </div>
 
         <div class="w-screen mx-auto flex justify-center">
