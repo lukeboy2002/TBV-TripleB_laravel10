@@ -33,12 +33,22 @@
         <nav id="navbar" class="sticky top-0 z-40 w-full bg-white dark:bg-gray-800">
             <x-admin.menu />
         </nav>
-        <div class="lg:flex-grow">
-            <div class="md:grid md:grid-cols-12">
-                <div class="md:col-span-12 pt-2">
-                    {{ $slot }}
-                </div>
-            </div>
+        <div class="lg:flex-grow p-4">
+            @if (isset($header))
+                <header>
+                    <x-cards.default class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 mb-4">
+                        <div class="border-l-4 border-orange-500 pl-4 flex justify-between items-center">
+                            <div class="text-orange-500 hover:text-orange-600 font-black uppercase focus:outline-none focus:text-orange-600">
+                                {{ $header }}
+                            </div>
+                        </div>
+                    </x-cards.default>
+                </header>
+            @endif
+            <!-- Page Content -->
+            <main>
+                {{ $slot }}
+            </main>
         </div>
     </div>
     <x-admin.mobilemenu />
