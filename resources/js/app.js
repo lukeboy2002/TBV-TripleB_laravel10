@@ -1,7 +1,7 @@
 import './bootstrap';
 import './leftslider';
 import './switcher';
-import 'tw-elements';
+import 'flowbite';
 
 import Alpine from 'alpinejs';
 import focus from '@alpinejs/focus';
