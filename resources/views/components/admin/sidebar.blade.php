@@ -12,6 +12,9 @@
         <x-links.dropdown class="block" href="#" :active="request()->routeIs('admin.sponsors*')">
             <i class="fa-solid fa-hand-holding-dollar mr-4"></i>Sponsors
         </x-links.dropdown>
+        <x-links.dropdown class="block" href="{{ route('admin.slides.index') }}" :active="request()->routeIs('admin.slides*')">
+            <i class="fa-regular fa-images mr-4"></i>Slides
+        </x-links.dropdown>
 
         <hr class="h-px m-4 bg-gray-200 border-0 dark:bg-gray-700">
 

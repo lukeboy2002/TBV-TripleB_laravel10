@@ -12,7 +12,7 @@ class SlideController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.slides.index');
     }
 
     /**
@@ -20,7 +20,7 @@ class SlideController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.slides.create');
     }
 
     /**

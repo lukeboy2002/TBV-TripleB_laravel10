@@ -27,8 +27,10 @@ Route::prefix('admin')->name('admin.')->middleware(['auth:sanctum', config('jets
     Route::get('settings', function () {
         return view('admin.dashboard');
     })->name('settings');
+    //Slides
+    Route::resource('slides', \App\Http\Controllers\admin\SlideController::class);
 });
 
 Route::prefix('admin')->name('admin.')->middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified', 'role:admin'])->group(function () {
-    //SPONSORS
+    //Slides
 });

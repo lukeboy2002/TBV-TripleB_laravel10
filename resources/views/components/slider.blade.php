@@ -8,8 +8,8 @@
             <img src="{{ asset('storage/'.$slide->image) }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="{{$slide->title}}">
             <div class="absolute carousel-caption flex justify-center items-center text-center h-full w-full hidden md:block">
                 <div class="flex flex-col h-full justify-center">
-                    <h5 class="text-4xl font-black" style="color: {{ $slide->color_title }}">{{$slide->title}}</h5>
-                    <p class="font-semibold" style="color: {{ $slide->color_subtitle }}">{{ $slide->subtitle }}</p>
+                    <h5 class="text-4xl font-black text-orange-500">{{$slide->title}}</h5>
+                    <p class="font-semibold text-orange-500">{{ $slide->subtitle }}</p>
                 </div>
             </div>
         </div>
