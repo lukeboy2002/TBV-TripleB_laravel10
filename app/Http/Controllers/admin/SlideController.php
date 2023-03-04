@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Slide;
 use Illuminate\Http\Request;
 
 class SlideController extends Controller
@@ -42,9 +43,9 @@ class SlideController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Slide $slide)
     {
-        //
+        return view('admin.slides.edit', compact('slide'));
     }
 
     /**
