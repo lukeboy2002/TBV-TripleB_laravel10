@@ -9,7 +9,7 @@
             <i class="fa-solid fa-house mr-4"></i>Dashboard
         </x-links.dropdown>
 
-        <x-links.dropdown class="block" href="{{ route('admin.sponsors.index') }}" :active="request()->routeIs('admin.sponsors*')">
+        <x-links.dropdown class="block" href="#" :active="request()->routeIs('admin.sponsors*')">
             <i class="fa-solid fa-hand-holding-dollar mr-4"></i>Sponsors
         </x-links.dropdown>
 

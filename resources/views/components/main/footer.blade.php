@@ -1,6 +1,7 @@
 <div class="bg-white dark:bg-gray-800 w-full">
     <div class="md:max-w-7x mx-auto md:flex justify-around items-center py-8 px-5 md:px-0">
-        <x-sponsors />
+{{--        <x-sponsors />--}}
+        <p class="text-gray-700 dark:text-orange-500 text-xl">Here our sponsors</p>
     </div>
 
     <div class="relative">
