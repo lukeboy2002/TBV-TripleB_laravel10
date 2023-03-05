@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use App\Models\Sponsor;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
@@ -21,6 +22,10 @@ class Sponsors extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.sponsors');
+        $sponsors = Sponsor::where('published', 1)->inRandomOrder()->limit(5)->get();
+
+        return view('components.sponsors', [
+            'sponsors' => $sponsors,
+        ]);
     }
 }

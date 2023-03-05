@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('sponsors', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->unique();
+            $table->string('link')->unique();
+            $table->string('image', 2048)->nullable();
+            $table->boolean('published')->nullable()->default(false);
             $table->timestamps();
         });
     }
