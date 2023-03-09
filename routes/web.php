@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,9 @@ Route::prefix('admin')->name('admin.')->middleware(['auth:sanctum', config('jets
     })->name('settings');
     //Slides
     Route::resource('slides', \App\Http\Controllers\admin\SlideController::class);
+    //ImageUpload
+    Route::post('upload', [\App\Http\Controllers\admin\ImageController::class, 'upload'])->name('upload');
+    Route::delete('revert', [\App\Http\Controllers\admin\ImageController::class, 'revert'])->name('revert');
     //Sponsors
     Route::resource('sponsors', \App\Http\Controllers\admin\SponsorController::class);
 });

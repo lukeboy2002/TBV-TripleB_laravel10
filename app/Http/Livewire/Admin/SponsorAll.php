@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Admin\Sponsors;
+namespace App\Http\Livewire\Admin;
 
 use App\Models\Sponsor;
 use Illuminate\Support\Facades\Storage;
@@ -39,7 +39,7 @@ class SponsorAll extends Component
 
     public function render()
     {
-        return view('livewire.admin.sponsors.sponsor-all', [
+        return view('livewire.admin.sponsor-all', [
             'sponsors' => Sponsor::orderby('published')
                 ->where(function ($query) {
                     $query->where('name', 'like', '%' . $this->search . '%')
@@ -71,6 +71,7 @@ class SponsorAll extends Component
         session()->flash('success', 'Slide deleted successfully!');
 
     }
+
     public function close()
     {
         $this->showModal = false;

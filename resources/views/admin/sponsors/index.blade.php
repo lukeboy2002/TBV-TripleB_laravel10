@@ -5,5 +5,5 @@
         </h2>
     </x-slot>
 
-    <livewire:admin.sponsors.sponsor-all />
+    <livewire:admin.sponsor-all />
 </x-admin-layout>

@@ -36,7 +36,7 @@
         <div class="lg:flex-grow p-4">
             @if (isset($header))
                 <header>
-                    <x-cards.default class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 mb-4">
+                    <x-cards.default class="mx-auto py-6 px-4 sm:px-6 lg:px-8 mb-4">
                         <div class="border-l-4 border-orange-500 pl-4 flex justify-between items-center">
                             <div class="text-orange-500 hover:text-orange-600 font-black uppercase focus:outline-none focus:text-orange-600">
                                 {{ $header }}
